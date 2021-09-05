@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <script src="https://kit.fontawesome.com/a7b1b132e7.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -12,6 +11,7 @@
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/filtres.css">
         <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/hebergement.css">
 </head>
 <body>
     <!---Hearder-->
@@ -19,50 +19,72 @@
     <div class ="header">
         <a href="#" class="logo"><img src="images/logo/Reservia.svg" alt="Logo"/></a>
         <ul class="nav">
-            
             <li class="nav-item nav-bordure"><a href="#">Hébergements</a></li>
             <li class="nav-item"><a href="#">Activités</a></li>
-            
         </ul>
         <div class="register">S'inscrire</div>
     </div>
     </header>
     <!--Section 1 filtres-->
-    <!--
     <section class="filtre">
-    
-    <h1 class="body">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p> En plein centre ville ou en plein nature </p>
-        <div class="centre">
-         <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-        <div><input class="research" type="text" placeholder="Marseille,France"></div>
-      <button class="button">Rechercher</button>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p> En plein centre ville ou en pleine nature </p>
+        <div class="recherche">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><input class="research" type="text" placeholder="Marseille,France"></div>
+            <button class="button">
+                <span class="mobileNone">Rechercher</span>
+                <span class="desktopNone"><i class="fas fa-search"></i></span>
+            </button>
         </div>
-        <h3 class="title-filtre">Filtres</h3>
-        <div class="group-filtre">
+        <div class="conteneur-filtre">
+            <h3>Filtres</h3>
             <ul class="filtre-ul">
-                <li class="filtre-boutton"><i class="fas fa-money-bill-wave fa-s"></i>Économique</li>
-                <li class="filtre-boutton"><i class="fas fa-child fa-s"></i>Familial</li>
-                <li class="filtre-boutton"><i class="fas fa-heart fa-s"></i>Romantique</li>
-                <li class="filtre-boutton"><i class="fas fa-dog fa_s"></i>Animaux autorisés</li>
+                <li><i class="fas fa-money-bill-wave fa-s"></i>
+                    <span>Économique</span></li>
+                <li><i class="fas fa-child fa-s"></i>
+                    <span>Familial</span></li>
+                <li><i class="fas fa-heart fa-s"></i>
+                    <span>Romantique</span></li>
+                <li><i class="fas fa-dog fa_s"></i>
+                    <span>Animaux autorisés</span></li>
             </ul>
         </div>
     <div class="info">
-    <div class="infoIcon"><i class="fas fa-info fa-s"></i></div>
-    <p class="centre">Plus de 500 logements sont disponibles dans cette ville</p>
-    </div
-    ></section>
--->
+        <i class="fas fa-info fa-xs"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
+    </section>
+
     <!--Section 2 hébergements-->
-    <section class= "flexhebergement">
-        <div class="taille-hebergement">
-            <h3>Hébergement à Marseille</h3>
-        <p>Auberge de la Cannebière</p>
+    <section class="hebergement">
+        <div class="principales">
+            <h2>Hébergements à Marseille</h2> 
+            <div class="logements">
+                <div class="logement">
+                   <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="premier">
+                   <div class="texte">
+                       <h3>Auberge de la Cannebière</h3>
+                        <p>Nuit à partir de <span>25 €</span></p>
+                        <div>
+                             <i class="fas fa-star pleine"></i>
+                             <i class="fas fa-star pleine"></i>
+                             <i class="fas fa-star pleine"></i>
+                             <i class="fas fa-star pleine"></i>
+                             <i class="fas fa-star vide"></i>
+                        </div>
+                        
+
+                   </div>
+                </div>
+
+            </div>      
         </div>
-
-        <div class="taille-populaire"></div>
-
-
+        
+        <div class="populaires">  
+            <h2>Les plus populaires</h2>
+            <div>Ici sera l'image</div>
+        </div>
     </section>
 
     <!--Section 3 les activités-->
